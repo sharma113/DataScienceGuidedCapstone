@@ -1,35 +1,31 @@
-# DataScienceGuidedCapstone
+# Data Science Guided Capstone 2
 
-Hello students!
-Welcome to the Data Science Guided Capstone! 
+This is for the Data Science Capstone Project.  This project focuses on a Palliative Care Machine Learning Model. 
 
-## Getting Started
+## Notebooks
 
-Start by forking this repository to your personal GitHub account and cloning the fork to your local machine. 
+1.Data Wrangling            ->  CapstoneDW.ipynb
+2.Exploratory Data Analysis -> Capstone_EDA.ipynb
+3.Feature Engineering       -> FeatureEngineering.ipynb
+4.Modeling                  -> CapstoneModeling2.ipynb
 
-**Note**: If forking and cloning a repo is new to you and/or github is new to you then it is strongly suggested to use [GitHub desktop](https://desktop.github.com/) and follow instructions in the docs [here](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop).
+## Reports:
+1. Final Report  -> Capstone_Final_Report.pdf
+2. Presentation  -> CapstoneSlideDeck.ppt
+3. Metric Report -> MetricReport.pdf
 
-From https://github.com/springboard-curriculum/DataScienceGuidedCapstone press the green "code" dropdown and then press "Open with GitHub Desktop". This will fork the springboard repository into your own github account and then clone that fork to your local machine - it is in here that you will do your work and push your changes back to your fork of the repo in your own github account. 
+## Problem Identification
 
-You will find the notebooks in the Notebooks/ directory. 
+The Question: Can we develop a model that will accurately predict whether a patient is a high risk of dying during the hospitalization.
 
-You will find instructions on how to complete and submit each step of the Guided Capstone in the course materials. Each subunit will focus on one step of the Capstone, corresponding to a step of the Data Science Method. Find the Jupyter Notebook corresponding to the subunit you are working on, and open it. Follow along as you are guided through the work, and fill in the blanks!
+The Audience: The results will be presented to the Hospitalist service of the local community hospital.
 
-When you are done with the notebook, push the changes to your personal GitHub account.
+The Data: The Dataset was downloaded from UCI Machine Learning Repository. The dataset represents 10 years (1999-2008) of clinical care at 130 US hospitals and integrated delivery networks. It includes over 50 features representing patient healthcare data. 
 
-## Pipenv
+The Modeling Response: Expired Patients = 1, Non-Expired Patients = 0
 
-The `Pipefile` has all the python dependencies and requirements you should need. So you can use [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/) is you want to create a seperate python enviornment for this project. 
+The Model: Random Forest with a Recall score of 98% and ROC AUC score of 96%
 
-To install pipenv see [here](https://pipenv-fork.readthedocs.io/en/latest/#install-pipenv-today).
+The Deliverables: Jupyter notebooks of data wrangling through modeling, a final report, and a presentation
 
-To create the env and install the required libraries (once you have pipenv installed) you can just do:
-```
-pipenv install
-```
 
-Then to activate the env and launch jupyter from this env you can do something like the below two commands:
-```
-pipenv shell
-jupyter lab
-```
